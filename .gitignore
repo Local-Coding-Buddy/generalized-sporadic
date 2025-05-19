@@ -1,0 +1,15 @@
+# Ignore hidden files
+.vscode/*.json
+.DS_Store
+
+# Ignore text and CSV files
+*.txt
+*.csv
+
+# Ignore files in archive folder
+/archive/*
+.vscode/tasks.json
+
+# Ignore executables
+test/main_test
+./main

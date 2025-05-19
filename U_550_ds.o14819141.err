@@ -1,0 +1,19 @@
+main.cpp:25:3: error: use of undeclared identifier 'fd'
+  fd = open("lock_file.txt",O_RDWR | O_CREAT, 0666);
+  ^
+main.cpp:26:20: error: expected ';' after expression
+  flock(fd,LOCK_EX)//so that I can write multiple times to the same file....
+                   ^
+                   ;
+main.cpp:26:9: error: use of undeclared identifier 'fd'
+  flock(fd,LOCK_EX)//so that I can write multiple times to the same file....
+        ^
+main.cpp:41:20: error: expected ';' after expression
+  flock(fd,LOCK_UN)
+                   ^
+                   ;
+main.cpp:41:9: error: use of undeclared identifier 'fd'
+  flock(fd,LOCK_UN)
+        ^
+5 errors generated.
+slurmstepd: error: *** JOB 14819141 ON compute-0-2 CANCELLED AT 2025-05-17T10:35:20 ***

@@ -1,0 +1,5 @@
+main.cpp:42:3: error: use of undeclared identifier 'close'
+  close(fd);
+  ^
+1 error generated.
+slurmstepd: error: *** JOB 14819179 ON compute-0-2 CANCELLED AT 2025-05-18T14:49:39 DUE TO TIME LIMIT ***
